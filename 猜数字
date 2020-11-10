@@ -1,0 +1,20 @@
+## 猜数字
+
+
+```python
+import random
+n=int(random.random()*100+1)
+i=1
+while i <= 10:
+    cin=int(input("请输入您想要输入的数字："))
+    if(cin < n):
+        print("您输入的数比较小")
+        i = i + 1
+    elif(cin > n):
+        print("您入的数字比较大")
+        i = i + 1
+    else:
+        print("恭喜您猜对了")
+        break
+    else:
+    print("您已经猜了10次,再接再厉")
