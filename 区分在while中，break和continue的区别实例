@@ -1,0 +1,67 @@
+## 区分while中break和continue的区别
+它们的区别是break跳出整个循环，直接执行下面的代码了;而continue是终止当次循环，不执行下面的代码，而是直接进入下一次循环
+### break
+
+
+```python
+count = 0
+
+while count <=100:
+    print('hello',count)
+    if count ==10:
+        break
+    count +=1
+print("out of hello ")
+```
+
+    hello 0
+    hello 1
+    hello 2
+    hello 3
+    hello 4
+    hello 5
+    hello 6
+    hello 7
+    hello 8
+    hello 9
+    hello 10
+    out of hello 
+    
+
+###  continue
+
+
+```python
+count = 11
+
+while count <= 100:
+    print('hi',count)
+    if count == 20:
+         continue
+    count += 1
+print("out of hi")    
+
+        
+```
+
+    hi 11
+    hi 12
+    hi 13
+    hi 14
+    hi 15
+    hi 16
+    hi 17
+    hi 18
+    hi 19
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
+    hi 20
