@@ -1,0 +1,18 @@
+file = open(r'C:\Users\Administrator\Desktop\stduent.csv','r')
+lines = file.readlines()
+stduent = {}
+for line in lines:
+    tmp_list = line.split(',')
+    xuehao = tmp_list[0]
+    xingming = tmp_list[1]
+    stduent[xuehao] = xingming
+print(stduent)
+import random
+
+num = int(input("请输入你要抽取的人数:"))
+random.sample(studuent.keys(),num)
+xuehao_list
+for xuehao in xuehao_list:
+    print(studunt[xuehao])
+
+{'1': '张三\n', '2': '李四\n', '3': '王五\n', '4': '丁六\n', '5': '陈七\n'}
